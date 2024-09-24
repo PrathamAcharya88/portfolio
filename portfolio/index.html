@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <nav>
+            <div class="logo">Pratham's Portfolio</div>
+            <ul class="nav-links">
+                <!-- Navigation links for smooth scrolling to sections -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="center-content">
+            <div class="profile-img">
+                <img src="mypic.jpg" alt="Profile Picture">
+            </div>
+            <div class="home-text">
+                <p>I am a frontend web developer, logo designer, banner designer, and SEO expert. I am currently studying at Nihareeka College, pursuing a Bachelor's in Computer Application (BCA).</p>
+                <div class="buttons">
+                    <a href="resume.pdf" class="btn">Resume</a>
+                    <a href="#contact" class="btn">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about">
+        <div class="center-content">
+            <div class="about-img">
+                <img src="mypic.jpg" alt="About Picture">
+            </div>
+            <div class="about-text">
+                <p><b>I am very interested in web development and cybersecurity. I am a passionate learner and can work well both in teams and solo, always seeking new challenges to grow my skills.</b></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+            <label>HTML</label>
+            <div class="progress-bar"><div class="html-skill"></div></div>
+        </div>
+        <div class="skill">
+            <label>CSS</label>
+            <div class="progress-bar"><div class="css-skill"></div></div>
+        </div>
+        <div class="skill">
+            <label>JavaScript</label>
+            <div class="progress-bar"><div class="js-skill"></div></div>
+        </div>
+        <div class="skill">
+            <label>Digital Marketing</label>
+            <div class="progress-bar"><div class="dm-skill"></div></div>
+        </div>
+        <div class="skill">
+            <label>SEO</label>
+            <div class="progress-bar"><div class="seo-skill"></div></div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates">
+        <h2>My Certificates</h2>
+        <div class="certificate">
+            <img src="certificate2.png" alt="FreeCodeCamp Certificate" class="certificate1">
+            <p><b>Responsive Web Design - FreeCodeCamp</b></p>
+        </div>
+        <div class="certificate">
+            <img src="certificate1.jpeg" alt="SkillLearn Certificate" class="certificate2">
+            <p><b>SEO - SkillLearn</b></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>Address: Biratnagar, Pushpalal Chowk</p>
+        <p>Phone: 9817394399</p>
+        <!-- Contact form with hover effect on send button -->
+        <form action="#">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+        <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Your Logo</div>
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank">
+                    <img src="github.png" alt="GitHub Logo">
+                </a>
+                <a href="https://facebook.com/yourusername" target="_blank">
+                    <img src="facebook.png" alt="Facebook Logo">
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank">
+                    <img src="instagram.png" alt="Instagram Logo">
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank">
+                    <img src="linkedin.png" alt="LinkedIn Logo">
+                </a>
+            </div>
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Smooth scrolling behavior for the whole page -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
